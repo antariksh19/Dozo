@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="app/src/main/res/drawable/pill.gif" alt="Dozo Animation" width="120">
+
 
   <h1>Dozo: Medication Adherence App 💊</h1>
 
@@ -19,33 +19,33 @@
 
 ## 🚀 Overview
 
-Dozo is a modern Android health utility application built entirely with Kotlin and Jetpack Compose[cite: 11]. It leverages a clean MVVM (Model-View-ViewModel) architecture to provide users with a highly responsive, crash-resistant experience for managing daily medication schedules, tracking dosage history, and receiving reliable foreground alerts[cite: 11]. 
+Dozo is a modern Android health utility application built entirely with Kotlin and Jetpack Compose. It leverages a clean MVVM (Model-View-ViewModel) architecture to provide users with a highly responsive, crash-resistant experience for managing daily medication schedules, tracking dosage history, and receiving reliable foreground alerts. 
 
 ### ✨ Key Technical Features
 
-* **Persistent Alarm Scheduling:** Utilizes customized `ReminderScheduler.kt` and `NotificationReceiver.kt` implementations to guarantee precise foreground alerts, ensuring alarms persist even across system restarts[cite: 11].
-* **Clean MVVM Architecture:** Highly decoupled codebase separating state management (`MedecineViewModel.kt`) from data operations (`MedicineRepository.kt`), ensuring scalability and testability[cite: 11].
-* **Modern Declarative UI:** Fully built with Jetpack Compose, featuring responsive custom elements like `HorizontalCalendar.kt`, `AnimatedGradientBrush.kt`, and `ThreeDEffects.kt` for a polished user experience[cite: 11].
-* **Cloud-Native Sync:** Pre-configured with Google Services (`google-services.json`) for seamless backend communication and secure data persistence[cite: 11].
+* **Persistent Alarm Scheduling:** Utilizes customized `ReminderScheduler.kt` and `NotificationReceiver.kt` implementations to guarantee precise foreground alerts, ensuring alarms persist even across system restarts.
+* **Clean MVVM Architecture:** Highly decoupled codebase separating state management (`MedecineViewModel.kt`) from data operations (`MedicineRepository.kt`), ensuring scalability and testability.
+* **Modern Declarative UI:** Fully built with Jetpack Compose, featuring responsive custom elements like `HorizontalCalendar.kt`, `AnimatedGradientBrush.kt`, and `ThreeDEffects.kt` for a polished user experience.
+* **Cloud-Native Sync:** Pre-configured with Google Services (`google-services.json`) for seamless backend communication and secure data persistence.
 
 ## 📂 Project Architecture
 
-The repository follows a strict package-by-feature structure to maintain an organized, scalable Android environment[cite: 11]:
+The repository follows a strict package-by-feature structure to maintain an organized, scalable Android environment:
 
 ```text
 Dozo/
 ├── app/src/main/java/com/example/dozo/
-│   ├── broadcast/         # Alarm triggers and notification receivers[cite: 11]
-│   ├── data/              # Repositories and data models (Medecine.kt, DoseHistory.kt)[cite: 11]
+│   ├── broadcast/         # Alarm triggers and notification receivers
+│   ├── data/              # Repositories and data models (Medecine.kt, DoseHistory.kt)
 │   ├── ui/
-│   │   ├── components/    # Reusable Compose widgets (EmptyStateView, DosageStepper)[cite: 11]
-│   │   ├── screens/       # Core app screens (Main, Dashboard, Settings)[cite: 11]
-│   │   └── theme/         # Global typography, color palettes, and theme states[cite: 11]
-│   ├── viewmodel/         # State holders and UI logic handlers[cite: 11]
-│   └── MainActivity.kt    # Application entry point[cite: 11]
-├── app/google-services.json # Firebase environment configuration[cite: 11]
-├── app/proguard-rules.pro   # R8 optimization and obfuscation rules[cite: 11]
-└── build.gradle.kts         # Kotlin DSL build scripts and dependencies[cite: 11]
+│   │   ├── components/    # Reusable Compose widgets (EmptyStateView, DosageStepper)
+│   │   ├── screens/       # Core app screens (Main, Dashboard, Settings)
+│   │   └── theme/         # Global typography, color palettes, and theme states
+│   ├── viewmodel/         # State holders and UI logic handlers
+│   └── MainActivity.kt    # Application entry point
+├── app/google-services.json # Firebase environment configuration
+├── app/proguard-rules.pro   # R8 optimization and obfuscation rules
+└── build.gradle.kts         # Kotlin DSL build scripts and dependencies
 ```
 
 ## 🛠 System Setup & Installation
@@ -68,10 +68,10 @@ cd dozo
 **2. Open the Project:**
 * Launch Android Studio.
 * Select **Open** and navigate to the cloned `dozo` directory.
-* Allow Gradle to automatically download required dependencies and sync the project (configured via the Kotlin DSL `build.gradle.kts` files)[cite: 11].
+* Allow Gradle to automatically download required dependencies and sync the project (configured via the Kotlin DSL `build.gradle.kts` files).
 
 **3. Firebase Configuration:**
-* The project expects a `google-services.json` file in the `app/` directory[cite: 11]. If you are cloning this for your own use, replace the existing file with your own Firebase project configuration to enable cloud syncing.
+* The project expects a `google-services.json` file in the `app/` directory. If you are cloning this for your own use, replace the existing file with your own Firebase project configuration to enable cloud syncing.
 
 **4. Run the Application:**
 * Select your target emulator or physical device from the device dropdown.
@@ -79,9 +79,9 @@ cd dozo
 
 ## 🧪 Testing
 
-The repository includes foundational setups for both unit and instrumented testing to validate the MVVM logic and UI components[cite: 11].
-* Run Unit Tests: Navigate to `app/src/test/java/` and execute `ExampleUnitTest.kt`[cite: 11].
-* Run UI Tests: Navigate to `app/src/androidTest/java/` and execute `ExampleInstrumentedTest.kt`[cite: 11].
+The repository includes foundational setups for both unit and instrumented testing to validate the MVVM logic and UI components.
+* Run Unit Tests: Navigate to `app/src/test/java/` and execute `ExampleUnitTest.kt`.
+* Run UI Tests: Navigate to `app/src/androidTest/java/` and execute `ExampleInstrumentedTest.kt`.
 
 ## 📫 Connect
 

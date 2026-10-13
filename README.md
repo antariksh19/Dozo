@@ -61,7 +61,7 @@ Follow these instructions to build and run the Dozo application locally using An
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/antariksh19/dozo.git](https://github.com/antariksh19/dozo.git)
+git clone https://github.com/antariksh19/dozo.git
 cd dozo
 ```
 
